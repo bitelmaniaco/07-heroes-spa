@@ -6,7 +6,6 @@ export const DcPage = () => {
             <h1> Pagina de DC </h1>
             <hr />
             <HeroeLista publicador='DC Comics'/>
-        
         </>
     )
 }

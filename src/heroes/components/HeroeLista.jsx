@@ -1,10 +1,11 @@
-import React from 'react';
-import { getHeroesByPublisher } from '../helpers/getHeroesByPublisher';
+import  { useMemo } from 'react';
+import { getHeroesByPublisher } from '../helpers';
 import { HeroeTarjeta } from './';
 
 export const HeroeLista = ({ publicador }) => {
 
-    const arrayHeroes = getHeroesByPublisher(publicador);
+    //evitar mas llamadas usamos useMemo
+    const arrayHeroes = useMemo(() => getHeroesByPublisher(publicador), [ publicador ]);
 
     return (
         <>

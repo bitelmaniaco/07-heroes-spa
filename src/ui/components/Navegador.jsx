@@ -37,18 +37,12 @@ export const Navegador = () => {
                     >
                         DC
                     </NavLink>
-                    {/* <NavLink 
-                        className="nav-item nav-link" 
-                        to="/heroe"
-                    >
-                        Heroe
-                    </NavLink>
                     <NavLink 
                         className="nav-item nav-link" 
                         to="/busqueda"
                     >
                         Buscar
-                    </NavLink> */}
+                    </NavLink>
                 </div>
             </div>
 
