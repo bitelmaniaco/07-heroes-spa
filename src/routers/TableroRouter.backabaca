@@ -1,0 +1,34 @@
+
+
+import { Routes, Route } from "react-router-dom";
+
+import { MarveloScreen } from '../components/mavelo/MarveloScreen';
+import { DeceScreen } from '../components/dece/DeceScreen';
+import { BusquedaScreen } from '../components/busqueda/BusquedaScreen';
+import { HeroeScreen } from '../components/heroes/HeroeScreen';
+
+import { BarraNav } from '../components/ui/BarraNav';
+
+
+
+
+
+export const TableroRouter = () => {
+    return (
+        <>
+            <BarraNav />
+            <div className="cointainer">
+                <Routes>
+                    <Route path="marvel"  element={ <MarveloScreen /> } />
+                    <Route path="dc"      element={ <DeceScreen /> } />
+                    <Route path="hero"    element={ <HeroeScreen /> } />
+
+                    <Route path="search"  element={ <BusquedaScreen /> } />
+
+                    <Route path="/"       element={ <MarveloScreen /> } />
+                </Routes>
+            </div>
+            
+        </>
+    )
+}
